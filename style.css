@@ -1,0 +1,210 @@
+/* ==================================
+General Settings
+===================================*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-setting: border-box;
+}
+
+html {
+  scroll-behaviour: smooth;
+
+}
+
+body {
+  font-family: Arial, Helvectiva, sans-serif;
+  line-length: 1.7;
+  color: #222;
+  color-background: #ffffff;
+}
+
+
+/* ================================
+   Navigation Bar
+================================ */
+
+nav {
+    width: 100%;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    border-bottom: 1px solid #eeeeee;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav h2 {
+    font-size: 22px;
+    color: #172554;
+}
+
+nav div {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #2563eb;
+}
+
+
+/* ================================
+   Main Sections
+================================ */
+
+section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 80px 8%;
+}
+
+section h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+    color: #172554;
+}
+
+section h3 {
+    font-size: 21px;
+    margin-bottom: 10px;
+    color: #1e3a8a;
+}
+
+section p {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+
+/* ================================
+   My Section
+================================ */
+
+section:first-of-type {
+    max-width: none;
+    min-height: 650px;
+    padding: 150px 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f8fafc;
+}
+
+section:first-of-type h1 {
+    font-size: 60px;
+    color: #172554;
+    margin-bottom: 10px;
+}
+
+section:first-of-type h2 {
+    font-size: 30px;
+    color: #2563eb;
+    margin-bottom: 15px;
+}
+
+section:first-of-type p {
+    max-width: 750px;
+    font-size: 18px;
+}
+
+
+/* ================================
+   Buttons / Links
+================================ */
+
+section a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+section a:hover {
+    text-decoration: underline;
+}
+
+
+/* ================================
+   Research / Project Cards
+================================ */
+
+section > div {
+    background-color: #f8fafc;
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+    transition: 0.3s;
+}
+
+section > div:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ================================
+   Footer
+================================ */
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #172554;
+    color: white;
+}
+
+footer p {
+    color: white;
+    margin: 0;
+}
+
+
+/* ================================
+   Mobile Responsive Design
+================================ */
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav div {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    section:first-of-type {
+        min-height: 550px;
+        padding: 100px 8%;
+    }
+
+    section:first-of-type h1 {
+        font-size: 42px;
+    }
+
+    section:first-of-type h2 {
+        font-size: 24px;
+    }
+
+    section {
+        padding: 60px 8%;
+    }
+
+}
